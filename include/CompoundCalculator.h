@@ -13,7 +13,10 @@ private:
 public:
     CompoundCalculator(double principal, double rate, int freq, double time, double contribution, bool useContribution);
 
+    void plotInvestment();
+
     double calculateInterest() const;
+    double calculateContribution() const;
 
 };
 
