@@ -1,1 +1,3 @@
 # FinanceCalculators
+
+gnuplot needed
