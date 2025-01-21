@@ -9,6 +9,7 @@ public:
     static double getYears();
     static int getCompFreq();
     static bool askForMonthlyContribution();
+    static double askInflation();
 };
 
 

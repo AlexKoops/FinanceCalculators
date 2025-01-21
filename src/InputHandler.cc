@@ -94,3 +94,18 @@ bool InputHandler::askForMonthlyContribution() {
     }
     return useMonthlyContribution;
 }
+
+double InputHandler::askInflation() {
+    double inflation;
+    while (true) {
+        std::cout << "Enter the expected annual inflation rate as a decimal (e.g., 0.02 for 2%): ";
+        std::cin >> inflation;
+        if (std::cin.fail()) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Invalid input. inflation has to be a number." << std::endl;
+        } else {
+            return inflation;
+        }
+    }
+}
